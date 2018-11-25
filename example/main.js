@@ -101,9 +101,7 @@ class Example extends React.Component<*, *> {
     }
 
     call(changeCall) {
-        this.editor.current.change(change => {
-            this.setState({ value: change.call(changeCall).value });
-        });
+        this.editor.current.command(changeCall);
     }
 
     onChange = ({ value }) => {
