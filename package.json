@@ -57,7 +57,7 @@
     "prepublish": "npm run build:dist && npm run build:flow",
     "postpublish": "npm run deploy-example",
     "lint": "eslint ./",
-    "build-example": "browserify ./example/main.js -o ./example/bundle.js -t [ babelify --presets [ env react stage-0 ] ] -t [ stringify --extensions [.yaml] ]",
+    "build-example": "browserify ./example/main.js -d -o ./example/bundle.js -t [ babelify --presets [ env react stage-0 ] ] -t [ stringify --extensions [.yaml] ]",
     "serve-example": "http-server ./example/ -p 8081",
     "start": "npm run build-example && npm run serve-example",
     "deploy-example": "npm run build-example && gh-pages -d ./example",
