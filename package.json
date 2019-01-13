@@ -1,7 +1,7 @@
 {
   "name": "golery-slate-edit-list",
   "description": "A Slate plugin to handle keyboard events in lists.",
-  "version": "0.18.0-golery.1",
+  "version": "0.18.0-golery.2",
   "license": "Apache-2.0",
   "repository": "git://github.com/productboard/slate-edit-list.git",
   "main": "./dist/index.js",
